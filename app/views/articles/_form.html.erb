@@ -1,0 +1,16 @@
+<div class="container my-5">
+  <%= form_for @article do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, class: 'form-control' %>
+
+<!-- <div class="form-group">
+  <%= f.label :content%>
+  <textarea class="form-control" id="@article[content]" rows="3"></textarea>
+</div> -->
+
+    <%= f.label :content%>
+    <%= f.text_field :content, class: 'form-control' %>
+
+  <%= f.submit %>
+  <% end %>
+</div>
